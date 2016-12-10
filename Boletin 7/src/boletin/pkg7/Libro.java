@@ -59,4 +59,20 @@ public class Libro {
             return true;
         }
     }
+    public boolean devolucion(){
+        if (numPrestados==0){
+            System.out.println("No se puede devolver");
+            return false;
+        }else{
+            numPrestados=numPrestados-1;
+            System.out.println("Libro devuelto");
+            return true;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return ("Hay "+numExemplares+" del libro: " + libro + ", del autor/a " + autor +" de los cuales estan prestaods "+ numPrestados);
+    }
+    
 }
