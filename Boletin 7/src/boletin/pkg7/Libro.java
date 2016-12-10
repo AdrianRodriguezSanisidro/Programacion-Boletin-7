@@ -55,7 +55,7 @@ public class Libro {
             return false;
         }else{
             numPrestados=numPrestados+1;
-            System.out.println("Libro disponible para prestar");
+            System.out.println("Libro disponible para prestar,libros disponibles:"+(numExemplares-numPrestados));
             return true;
         }
     }
@@ -72,7 +72,7 @@ public class Libro {
 
     @Override
     public String toString() {
-        return ("Hay "+numExemplares+" del libro: " + libro + ", del autor/a " + autor +" de los cuales estan prestaods "+ numPrestados);
+        return ("Hay "+numExemplares+" del libro: " + libro + ", del autor/a " + autor +" de los cuales estan prestaodos "+ numPrestados);
     }
     
 }
